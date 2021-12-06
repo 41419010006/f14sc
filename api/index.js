@@ -46,6 +46,7 @@ bot.on('message', (msg) => {
                 msg.chat.id,
                 `predicted p is ${jres[1]} watt`
             );
+            state=0
         })
     }else{
         state=0
