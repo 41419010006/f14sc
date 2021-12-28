@@ -46,6 +46,10 @@ bot.on('message', (msg) => {
                 msg.chat.id,
                 `predicted p is ${jres[1]} watt`
             );
+            bot.sendMessage(
+                msg.chat.id,
+                `created by Effendi`
+            );
             state=0
         })
     }else{
