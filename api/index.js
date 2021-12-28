@@ -53,14 +53,6 @@ bot.on('message', (msg) => {
     }
 })
 
-bot.onText(/\/start/, (msg) => { 
-    console.log(msg)
-    bot.sendMessage(
-        msg.chat.id,
-        `/predict again`
-    );   
-});
-
 // routers
 r.get('/prediction/:i/:r', function(req, res, next) {    
     model.predict(
